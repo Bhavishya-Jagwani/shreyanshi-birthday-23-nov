@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Shreyanshi 🎀</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ font-family:'Trebuchet MS',sans-serif;
+ background:#10091d;color:white;
+ text-align:center;overflow-x:hidden
+}
+section{
+ min-height:100vh;padding:75px 20px;
+ display:flex;flex-direction:column;
+ align-items:center;justify-content:center
+}
+.hero{
+ background:radial-gradient(circle at top,#61215e,transparent 60%),
+ linear-gradient(135deg,#10091d,#281039,#10091d)
+}
+h1{
+ font-size:clamp(2.5rem,8vw,5rem);
+ color:#ff8ecb;text-shadow:0 0 25px #ff40ae;
+ animation:glow 2s infinite alternate
+}
+h2{font-size:clamp(1.8rem,5vw,3rem);color:#ff9ed4;margin:20px}
+p{font-size:1.1rem;line-height:1.8;max-width:650px;color:#f5d8ed;margin:12px auto}
+
+@keyframes glow{
+ from{text-shadow:0 0 10px #ff40ae}
+ to{text-shadow:0 0 35px #ff40ae,0 0 60px #a34dff}
+}
+@keyframes float{
+ 0%,100%{transform:translateY(0)}
+ 50%{transform:translateY(-20px)}
+}
+.emoji{font-size:5rem;animation:float 2s infinite;margin:20px}
+
+button{
+ background:linear-gradient(135deg,#ff48a8,#9e52ff);
+ color:white;border:0;border-radius:50px;
+ padding:15px 28px;font-size:1rem;
+ font-weight:bold;cursor:pointer;margin:15px;
+ box-shadow:0 0 20px #ff48a866;transition:.3s
+}
+button:hover{transform:scale(1.08);box-shadow:0 0 30px #ff48a8}
+
+.card{
+ background:#ffffff12;border:1px solid #ff96dc55;
+ border-radius:25px;padding:30px;
+ width:min(90%,600px);margin:15px auto;
+ box-shadow:0 0 30px #a33cff22
+}
+.pink{background:linear-gradient(135deg,#2a123d,#58194d)}
+.dark{background:#0c0715}
+.love{background:linear-gradient(135deg,#30102d,#170c2d)}
+.hidden{display:none}
+#secret{color:#ffaddb;font-size:1.2rem;line-height:1.8;margin-top:20px}
+#roast{color:#ffc4e8;font-size:1.3rem;min-height:65px;margin-top:20px}
+
+.heart{
+ position:fixed;bottom:-30px;pointer-events:none;
+ z-index:10;animation:rise linear forwards
+}
+@keyframes rise{
+ to{transform:translateY(-110vh) rotate(360deg);opacity:0}
+}
+.confetti{
+ position:fixed;width:9px;height:12px;top:-20px;
+ z-index:99;pointer-events:none;
+ animation:fall 3s linear forwards
+}
+@keyframes fall{
+ to{transform:translateY(110vh) rotate(720deg);opacity:0}
+}
+footer{padding:30px;background:#08050d;color:#ff9ed4}
+.small{font-size:.9rem;color:#cbb4d5}
+
+@media(max-width:600px){
+ section{padding:65px 15px}
+ p{font-size:1rem}
+ .card{padding:22px}
+}
+</style>
+</head>
+
+<body>
+
+<!-- FIRST PAGE -->
+<section class="hero">
+ <div class="emoji">🎀</div>
+ <h1>HAPPY BIRTHDAY</h1>
+ <h2>SHREYANSHI 💗</h2>
+
+ <p>
+ WARNING ⚠️<br>
+ A certified drama queen was born today.
+ The world has never been peaceful since.
+ </p>
+
+ <p>📅 23 November 2026</p>
+
+ <button onclick="celebrate();document.getElementById('friendship').scrollIntoView()">
+ ENTER AT YOUR OWN RISK 😂
+ </button>
+
+ <p class="small">Made with 50% madness and 50% irritation.</p>
+</section>
+
+
+<!-- FRIENDSHIP MESSAGE -->
+<section class="pink" id="friendship">
+ <h2>Dear Shreyanshi 💌</h2>
+
+ <div class="card">
+  <p>Congratulations girl!! 🥳</p>
+
+  <p>
+   You've officially survived another year
+   of being dramatic, annoying, crazy
+   and unnecessarily iconic.
+  </p>
+
+  <p>
+   Honestly, I don't know what I did
+   to deserve a best friend like you...
+   but I must have done something
+   seriously questionable in my past life. 💀
+  </p>
+
+  <p>
+   But jokes apart, life would be boring
+   without your nonsense.
+  </p>
+
+  <h2>YOU'RE STUCK WITH ME, IDIOT! 😂</h2>
+ </div>
+</section>
+
+
+<!-- ROAST SECTION -->
+<section class="dark">
+ <h2>LET'S TALK ABOUT YOU 💀</h2>
+
+ <div class="card">
+  <div class="emoji">🤡</div>
+
+  <p>
+   A scientific investigation into
+   the personality of Shreyanshi.
+  </p>
+
+  <button onclick="roastMe()">EXPOSE ME 😂</button>
+
+  <div id="roast">Press the button if you dare...</div>
+ </div>
+</section>
+
+
+<!-- BEST FRIEND SECTION -->
+<section class="love">
+ <h2>WHY YOU'RE MY FAVOURITE HUMAN 🫶</h2>
+
+ <div class="card">
+  <p>1. You make the most boring days memorable.</p>
+  <p>2. You understand my nonsense.</p>
+  <p>3. You're always ready for some new drama.</p>
+  <p>4. You can annoy me like nobody else.</p>
+  <p>5. Somehow, you're still irreplaceable.</p>
+
+  <div class="emoji">👯‍♀️</div>
+
+  <h2>BEST FRIENDS FOREVER!</h2>
+ </div>
+</section>
+
+
+<!-- INSIDE JOKES -->
+<section class="pink">
+ <h2>OUR FRIENDSHIP RULES 😂</h2>
+
+ <div class="card">
+  <div class="emoji">👯‍♀️</div>
+
+  <p>🫂 FOREVER PARTNERS IN CRIME!</p>
+
+  <p>💀 ALWAYS BE A RASHMI HATER!</p>
+
+  <p>🥹 DON'T FORGET OUR 8C VIBES & MEMORIES!</p>
+
+  <p>😭 NEVER STOP BEING THE DRAMA QUEEN YOU ARE!</p>
+
+  <h2>8C FOREVER! 💗</h2>
+ </div>
+</section>
+
+
+<!-- SECRET MESSAGE -->
+<section class="pink">
+ <h2>A SECRET FOR YOU 🤫</h2>
+
+ <div class="card">
+  <div class="emoji">💌</div>
+
+  <p>
+   Okay, enough roasting.
+   There's actually something
+   I want to tell you.
+  </p>
+
+  <button onclick="showSecret()">
+   OPEN YOUR SECRET MESSAGE 💗
+  </button>
+
+  <div id="secret" class="hidden">
+   You're one of those people
+   I never want to lose.
+
+   <br><br>
+
+   No matter how much we fight,
+   how much we roast each other,
+   or how crazy life gets...
+
+   <br><br>
+
+   I'll always have your back.
+
+   <br><br>
+
+   Stay crazy. Stay happy.
+   And never stop being YOU. 😂
+
+   <br><br>
+
+   BEST FRIENDS FOREVER. 🫂
+   <br>
+   FOREVER PARTNERS IN CRIME!
+   <br>
+   8C MEMORIES NEVER DIE! 💗
+  </div>
+ </div>
+</section>
+
+
+<!-- BIRTHDAY CAKE -->
+<section class="dark">
+ <h2>NOW MAKE A WISH! 🎂</h2>
+
+ <div class="card">
+  <div id="cake" class="emoji">🎂</div>
+
+  <p>One more year older. Still not wiser. 😭</p>
+
+  <p>Close your eyes, make a wish and tap the button!</p>
+
+  <button onclick="birthdayWish()">BLOW THE CANDLES! 🕯️</button>
+
+  <div id="wish"></div>
+ </div>
+</section>
+
+
+<!-- FINAL PAGE -->
+<section class="hero">
+ <div class="emoji">💖</div>
+
+ <h1>HAPPY BIRTHDAY</h1>
+ <h2>MY FAVOURITE IDIOT!</h2>
+
+ <p>
+  May your life be full of happiness,
+  success, crazy adventures,
+  unlimited laughter and everything
+  your heart wishes for.
+ </p>
+
+ <div class="card">
+  <h2>REMEMBER THESE RULES 😂</h2>
+
+  <p>🫂 FOREVER PARTNERS IN CRIME!</p>
+  <p>💀 ALWAYS BE A RASHMI HATER!</p>
+  <p>🥹 DON'T FORGET OUR 8C VIBES & MEMORIES!</p>
+ </div>
+
+ <h2>STAY ICONIC, SHREYANSHI! 🎀</h2>
+
+ <button onclick="celebrate()">
+  ONE LAST CELEBRATION!!! 🎉
+ </button>
+</section>
+
+
+<footer>
+ Made with ❤️, madness & unlimited friendship.
+ <br>
+ 8C FOREVER. 💗
+ <br>
+ © Birthday Special 2026
+</footer>
+
+
+<script>
+
+// FLOATING HEARTS
+function createHeart(){
+ const heart=document.createElement("div");
+ heart.className="heart";
+
+ heart.innerHTML=["💗","💕","💖","✨","💜"][
+  Math.floor(Math.random()*5)
+ ];
+
+ heart.style.left=Math.random()*100+"vw";
+ heart.style.animationDuration=(3+Math.random()*4)+"s";
+ heart.style.fontSize=(15+Math.random()*25)+"px";
+
+ document.body.appendChild(heart);
+ setTimeout(()=>heart.remove(),7000);
+}
+
+setInterval(createHeart,450);
+
+
+// FUNNY ROAST GENERATOR
+const roasts=[
+ "Your attitude is bigger than your achievements. 💀",
+ "You need a software update... your drama is outdated. 😂",
+ "Even Google can't find your logic sometimes. 🤡",
+ "You're 10% human and 90% unnecessary drama.",
+ "If overthinking was a career, you'd be a billionaire.",
+ "Your brain has left the chat. 💀",
+ "You are proof that chaos can be cute. 😭",
+ "One day your drama will get its own Netflix series."
+];
+
+function roastMe(){
+ const random=Math.floor(Math.random()*roasts.length);
+ document.getElementById("roast").innerText=roasts[random];
+}
+
+
+// SECRET MESSAGE
+function showSecret(){
+ document.getElementById("secret").classList.remove("hidden");
+ celebrate();
+}
+
+
+// BIRTHDAY CELEBRATION
+function celebrate(){
+ for(let i=0;i<100;i++){
+  const confetti=document.createElement("div");
+  confetti.className="confetti";
+
+  confetti.style.left=Math.random()*100+"vw";
+
+  confetti.style.backgroundColor=[
+   "#ff55ae","#d66bff","#ffffff","#ffd166"
+  ][Math.floor(Math.random()*4)];
+
+  confetti.style.animationDuration=(2+Math.random()*3)+"s";
+
+  document.body.appendChild(confetti);
+  setTimeout(()=>confetti.remove(),5000);
+ }
+}
+
+
+// BIRTHDAY CAKE
+function birthdayWish(){
+ document.getElementById("cake").innerHTML="🍰";
+
+ document.getElementById("wish").innerHTML=
+ "<h2>WISH GRANTED! ✨</h2>"+
+ "<p>May all your dreams come true, Shreyanshi! 💗</p>";
+
+ celebrate();
+}
+
+</script>
+
+</body>
+</html>
